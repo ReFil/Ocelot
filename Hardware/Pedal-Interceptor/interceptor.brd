@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -192,6 +192,8 @@
 <text x="32" y="13" size="1.778" layer="25" rot="R90">IN</text>
 <text x="6" y="38.7" size="1.778" layer="25" rot="R180">RST</text>
 <text x="8.1" y="49.1" size="1.778" layer="25" rot="R180">BOOT</text>
+<hole x="16.3" y="15" drill="3"/>
+<hole x="16.3" y="48.8" drill="3"/>
 </plain>
 <libraries>
 <library name="comma.ai">
@@ -2421,8 +2423,6 @@ Please make sure your boards conform to these design rules.
 <wire x1="9" y1="42" x2="9" y2="40" width="0.508" layer="16"/>
 <wire x1="10" y1="43" x2="10" y2="44.69" width="0.508" layer="1"/>
 <wire x1="10" y1="44.69" x2="10.47" y2="45.16" width="0.508" layer="1"/>
-<wire x1="10" y1="43" x2="14.32" y2="47.32" width="0.508" layer="16"/>
-<wire x1="14.32" y1="47.32" x2="19.29" y2="47.32" width="0.508" layer="16"/>
 <wire x1="19.29" y1="47.32" x2="20.38" y2="46.23" width="0.254" layer="16"/>
 <wire x1="20.38" y1="46.23" x2="20.38" y2="45.42" width="0.254" layer="16"/>
 <wire x1="18.29" y1="21.48" x2="18.29" y2="22.59" width="0.254" layer="1"/>
@@ -2446,6 +2446,11 @@ Please make sure your boards conform to these design rules.
 <wire x1="14.2" y1="28.3" x2="15.6" y2="29.7" width="0.3048" layer="1"/>
 <wire x1="15.6" y1="29.7" x2="15.6" y2="34.3" width="0.3048" layer="1"/>
 <wire x1="15.6" y1="34.3" x2="15.9" y2="34.6" width="0.3048" layer="1"/>
+<wire x1="10" y1="43" x2="13.5" y2="46.5" width="0.508" layer="16"/>
+<wire x1="19.026" y1="47.056" x2="19.29" y2="47.32" width="0.508" layer="16"/>
+<wire x1="17.13085" y1="46.5" x2="17.68685" y2="47.056" width="0.508" layer="16"/>
+<wire x1="17.68685" y1="47.056" x2="19.026" y2="47.056" width="0.508" layer="16"/>
+<wire x1="13.5" y1="46.5" x2="17.13085" y2="46.5" width="0.508" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="C3" pad="1"/>
