@@ -2475,6 +2475,8 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5233-Data
 <part name="SUPPLY12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="GND17" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
+<part name="R5" library="comma.ai" deviceset="R" device="0402" value="120"/>
+<part name="R6" library="comma.ai" deviceset="R" device="0402" value="120"/>
 </parts>
 <sheets>
 <sheet>
@@ -2703,6 +2705,14 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5233-Data
 </instance>
 <instance part="SUPPLY13" gate="G$1" x="180.34" y="52.07" smashed="yes">
 <attribute name="VALUE" x="180.34" y="54.864" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="R5" gate="G$1" x="162.56" y="25.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="166.37" y="23.9014" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="166.37" y="28.702" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R6" gate="G$1" x="162.56" y="17.78" smashed="yes" rot="R180">
+<attribute name="NAME" x="166.37" y="16.2814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="166.37" y="21.082" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -3214,8 +3224,9 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5233-Data
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="2"/>
-<wire x1="184.15" y1="25.4" x2="177.8" y2="25.4" width="0.1524" layer="91"/>
 <label x="177.8" y="25.4" size="1.778" layer="95" rot="R180"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="25.4" x2="184.15" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CAN2_L" class="0">
@@ -3226,8 +3237,10 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5233-Data
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="3"/>
-<wire x1="184.15" y1="22.86" x2="177.8" y2="22.86" width="0.1524" layer="91"/>
 <label x="177.8" y="22.86" size="1.778" layer="95" rot="R180"/>
+<wire x1="184.15" y1="22.86" x2="157.48" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="22.86" x2="157.48" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CAN3_H" class="0">
@@ -3238,8 +3251,9 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5233-Data
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="5"/>
-<wire x1="184.15" y1="17.78" x2="177.8" y2="17.78" width="0.1524" layer="91"/>
 <label x="177.8" y="17.78" size="1.778" layer="95" rot="R180"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="17.78" x2="184.15" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CAN3_L" class="0">
@@ -3250,8 +3264,10 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5233-Data
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="6"/>
-<wire x1="184.15" y1="15.24" x2="177.8" y2="15.24" width="0.1524" layer="91"/>
 <label x="177.8" y="15.24" size="1.778" layer="95" rot="R180"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="17.78" x2="157.48" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="15.24" x2="184.15" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">

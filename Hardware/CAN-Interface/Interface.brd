@@ -2563,7 +2563,6 @@ Please make sure your boards conform to these design rules.
 <vertex x="88.2" y="80.9"/>
 </polygon>
 <wire x1="18.42" y1="66.41" x2="4.31" y2="66.41" width="1.016" layer="1"/>
-<wire x1="4.31" y1="66.41" x2="4.3" y2="66.4" width="1.016" layer="1"/>
 <wire x1="18.42" y1="47.36" x2="17.505" y2="48.275" width="1.016" layer="1"/>
 <wire x1="17.505" y1="48.275" x2="12.316975" y2="48.275" width="1.016" layer="1"/>
 <wire x1="12.316975" y1="48.275" x2="4.31" y2="56.281975" width="1.016" layer="1"/>
