@@ -553,25 +553,6 @@ chip</description>
 <wire x1="0.9" y1="-0.45" x2="0.9" y2="0.45" width="0.127" layer="21"/>
 <wire x1="0.9" y1="0.45" x2="-0.9" y2="0.45" width="0.127" layer="21"/>
 </package>
-<package name="1206-R">
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="-1.27" y="1.143" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.397" y="-1.524" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-<wire x1="-2.6" y1="1.1" x2="-2.6" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="-2.6" y1="-1.1" x2="2.6" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="2.6" y1="-1.1" x2="2.6" y2="1.1" width="0.127" layer="21"/>
-<wire x1="2.6" y1="1.1" x2="-2.6" y2="1.1" width="0.127" layer="21"/>
-</package>
 <package name="SO08">
 <description>&lt;b&gt;Small Outline Package 8&lt;/b&gt;&lt;br&gt;
 NS Package M08A</description>
@@ -913,15 +894,6 @@ NS Package M08A</description>
 </technologies>
 </device>
 <device name="0402" package="0402-R">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1206" package="1206-R">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -8560,6 +8532,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="SUPPLY8" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device="" value="3V3"/>
 <part name="U5" library="SamacSys_Parts" deviceset="MIC5233-5.0YM5-TR" device=""/>
 <part name="SJ1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ2W" device="" package3d_urn="urn:adsk.eagle:package:15474/1"/>
+<part name="R5" library="comma.ai" deviceset="R" device="0402"/>
+<part name="GND7" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8864,6 +8838,13 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <attribute name="NAME" x="249.301" y="66.04" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="247.015" y="66.04" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="R5" gate="G$1" x="190.5" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="189.0014" y="146.05" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="193.802" y="146.05" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND7" gate="1" x="190.5" y="142.24" smashed="yes">
+<attribute name="VALUE" x="187.96" y="139.7" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9055,6 +9036,10 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <wire x1="259.08" y1="81.28" x2="243.84" y2="81.28" width="0.1524" layer="91"/>
 <label x="243.84" y="81.28" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VCAP2" class="0">
@@ -9527,7 +9512,11 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <segment>
 <pinref part="S2" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="BOOT0"/>
-<wire x1="193.04" y1="157.48" x2="185.42" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="157.48" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="190.5" y1="157.48" x2="185.42" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="154.94" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
+<junction x="190.5" y="157.48"/>
 </segment>
 </net>
 <net name="N$11" class="0">

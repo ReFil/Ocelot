@@ -2317,6 +2317,9 @@ Please make sure your boards conform to these design rules.
 <attribute name="POPULARITY" value="7" x="20.3" y="6.2" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="20.1999" y="6.2" size="0.02" layer="28" rot="MR180"/>
 </element>
+<element name="R5" library="comma.ai" package="0402-R" value="" x="9" y="44" smashed="yes" rot="R270">
+<attribute name="NAME" x="9.762" y="44.635" size="0.6096" layer="25" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2393,6 +2396,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="18.88" y1="40.42" x2="18" y2="41.3" width="0.508" layer="16"/>
 <via x="18" y="41.3" extent="1-16" drill="0.5"/>
 <contactref element="U5" pad="2"/>
+<contactref element="R5" pad="1"/>
 <wire x1="19.29" y1="44.02" x2="23.13" y2="41.86" width="0" layer="19" extent="16-16"/>
 <wire x1="18" y1="41.3" x2="19.29" y2="44.02" width="0" layer="19" extent="16-16"/>
 <wire x1="19.16" y1="37.12" x2="18.88" y2="39.47" width="0" layer="19" extent="1-16"/>
@@ -2436,6 +2440,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="10.47" y1="41.86" x2="14.11" y2="37.12" width="0" layer="19" extent="1-1"/>
 <wire x1="1.37" y1="36.18" x2="2.69" y2="29.91" width="0" layer="19" extent="1-1"/>
 <wire x1="16" y1="2.75" x2="10.89" y2="8.78" width="0" layer="19" extent="16-16"/>
+<wire x1="9" y1="44.45" x2="10.89" y2="8.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCAP2">
 <contactref element="U1" pad="47"/>
@@ -2902,6 +2907,9 @@ Please make sure your boards conform to these design rules.
 <wire x1="10.26" y1="36.33" x2="7.69" y2="38.9" width="0.2" layer="1"/>
 <wire x1="7.69" y1="40" x2="7.69" y2="38.9" width="0.2" layer="1"/>
 <wire x1="10.26" y1="36.33" x2="10.26" y2="33.02" width="0.2" layer="1"/>
+<contactref element="R5" pad="2"/>
+<wire x1="7.69" y1="40" x2="7.69" y2="42.24" width="0.1524" layer="1"/>
+<wire x1="7.69" y1="42.24" x2="9" y2="43.55" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$11">
 <contactref element="D1" pad="1"/>
