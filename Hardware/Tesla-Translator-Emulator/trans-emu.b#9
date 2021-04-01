@@ -964,7 +964,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="16.4909" y="26.8488375" size="0.6096" layer="26" rot="MR90"/>
 </element>
 <element name="C14" library="comma.ai" package="0603-C" value="100n" x="4.73298125" y="28.734240625" smashed="yes" rot="MR90">
-<attribute name="NAME" x="5.57758125" y="26.3343625" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="NAME" x="5.89498125" y="27.145240625" size="0.6096" layer="26" rot="MR90"/>
 </element>
 <element name="C15" library="comma.ai" package="0603-C" value="2.2u" x="4.9647" y="5.02721875" smashed="yes" rot="MR180">
 <attribute name="NAME" x="3.096578125" y="5.780559375" size="0.6096" layer="26" rot="MR270"/>
@@ -988,10 +988,10 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="16.455440625" y="22.043621875" size="0.6096" layer="26" rot="MR270"/>
 </element>
 <element name="C7" library="comma.ai" package="0603-C" value="100n" x="23.05558125" y="21.3334625" smashed="yes" rot="MR0">
-<attribute name="NAME" x="25.4089375" y="21.147" size="0.6096" layer="26" rot="MR270"/>
+<attribute name="NAME" x="24.64458125" y="22.4954625" size="0.6096" layer="26" rot="MR0"/>
 </element>
 <element name="C8" library="comma.ai" package="0603-C" value="100n" x="23.07081875" y="19.248121875" smashed="yes" rot="MR0">
-<attribute name="NAME" x="25.327659375" y="19.061659375" size="0.6096" layer="26" rot="MR270"/>
+<attribute name="NAME" x="24.65981875" y="20.410121875" size="0.6096" layer="26" rot="MR0"/>
 </element>
 <element name="C9" library="comma.ai" package="0603-C" value="100n" x="7.020878125" y="19.65268125" smashed="yes" rot="MR0">
 <attribute name="NAME" x="8.609878125" y="20.81468125" size="0.6096" layer="26" rot="MR0"/>
@@ -1059,7 +1059,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="5.27" y="17.3" size="0.254" layer="20" rot="MR270"/>
 </element>
 <element name="U3" library="comma.ai" package="HVSON8" value="TJA1042HVSON" x="1.9952625" y="28.77271875" smashed="yes" rot="MR270">
-<attribute name="NAME" x="0.469903125" y="26.92815625" size="0.254" layer="20" rot="MR270"/>
+<attribute name="NAME" x="0.1752625" y="30.39271875" size="0.254" layer="20" rot="MR270"/>
 </element>
 <element name="U4" library="comma.ai" package="HVSON8" value="TJA1042HVSON" x="12.09" y="28.52" smashed="yes" rot="MR270">
 <attribute name="NAME" x="10.27" y="30.14" size="0.254" layer="20" rot="MR270"/>
@@ -1167,10 +1167,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="17.00544375" y1="16.00290625" x2="17.00290625" y2="16.00290625" width="0.508" layer="16"/>
 <via x="17.00290625" y="16.00290625" extent="1-16" drill="0.3048"/>
 <wire x1="17.00290625" y1="16.00290625" x2="17" y2="16" width="0.508" layer="1"/>
-<via x="24.894540625" y="10.576559375" extent="1-16" drill="0.35"/>
-<via x="24" y="15" extent="1-16" drill="0.35"/>
-<via x="23.187659375" y="15.3035" extent="1-16" drill="0.35"/>
-<via x="25.847040625" y="10.614659375" extent="1-16" drill="0.35"/>
+<wire x1="25.7937" y1="14.855559375" x2="24.89" y2="11.63" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAN1_RX">
 <contactref element="U1" pad="61"/>

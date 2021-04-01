@@ -617,31 +617,6 @@ by exp-lbrs.ulp</description>
 <wire x1="10" y1="15" x2="10" y2="-3" width="0.1524" layer="21"/>
 <wire x1="10" y1="-3" x2="-4" y2="-3" width="0.1524" layer="21"/>
 </package>
-<package name="MICROFIT-6">
-<pad name="2" x="0" y="0" drill="1"/>
-<pad name="1" x="3" y="0" drill="1"/>
-<pad name="3" x="-3" y="0" drill="1"/>
-<pad name="4" x="3" y="-3" drill="1"/>
-<pad name="5" x="0" y="-3" drill="1"/>
-<pad name="6" x="-3" y="-3" drill="1"/>
-<hole x="0" y="-7.2" drill="3"/>
-<wire x1="6.6" y1="-12" x2="6.6" y2="-6" width="0.1524" layer="21"/>
-<wire x1="6.6" y1="-6" x2="5" y2="-2" width="0.1524" layer="21"/>
-<wire x1="-5" y1="-2" x2="-6.7" y2="-6" width="0.1524" layer="21"/>
-<wire x1="-6.7" y1="-6" x2="-6.7" y2="-12" width="0.1524" layer="21"/>
-<wire x1="-6.7" y1="-12" x2="6.6" y2="-12" width="0.1524" layer="21"/>
-<wire x1="-5" y1="-2" x2="-5" y2="1.4" width="0.1524" layer="21"/>
-<wire x1="-5" y1="1.4" x2="5" y2="1.4" width="0.1524" layer="21"/>
-<wire x1="5" y1="1.4" x2="5" y2="-2" width="0.1524" layer="21"/>
-<wire x1="-6.7" y1="-12" x2="-6.7" y2="-6" width="0.1524" layer="39"/>
-<wire x1="-6.7" y1="-6" x2="-5" y2="-2" width="0.1524" layer="39"/>
-<wire x1="-5" y1="-2" x2="-5" y2="1.4" width="0.1524" layer="39"/>
-<wire x1="-5" y1="1.4" x2="5" y2="1.4" width="0.1524" layer="39"/>
-<wire x1="5" y1="1.4" x2="5" y2="-2" width="0.1524" layer="39"/>
-<wire x1="5" y1="-2" x2="6.6" y2="-6" width="0.1524" layer="39"/>
-<wire x1="6.6" y1="-6" x2="6.6" y2="-12" width="0.1524" layer="39"/>
-<wire x1="6.6" y1="-12" x2="-6.7" y2="-12" width="0.1524" layer="39"/>
-</package>
 <package name="LQFP64-10X10MM">
 <smd name="1" x="-5.75" y="3.75" dx="1.1938" dy="0.3048" layer="1"/>
 <smd name="2" x="-5.75" y="3.25" dx="1.1938" dy="0.3048" layer="1"/>
@@ -1074,7 +1049,6 @@ Please make sure your boards conform to these design rules.
 <attribute name="SF_SKU" value="COM-08229" x="-9.89961875" y="-38.187659375" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U$1" library="interceptor" package="MINI50" value="MINI50-4" x="9.86" y="12.19" smashed="yes" rot="R180"/>
-<element name="U$2" library="interceptor" package="MICROFIT-6" value="MICROFIT-6" x="7.32" y="22.25" smashed="yes" rot="R180"/>
 <element name="U1" library="interceptor" package="LQFP64-10X10MM" value="STM32F413RGT6" x="21.64" y="17.38" smashed="yes" rot="R180">
 <attribute name="BUILT_BY" value="EMA_UL_Team" x="-19" y="25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="-19" y="25" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1199,7 +1173,6 @@ Please make sure your boards conform to these design rules.
 <contactref element="U4" pad="PAD"/>
 <contactref element="C14" pad="2"/>
 <contactref element="C12" pad="2"/>
-<contactref element="U$2" pad="1"/>
 <contactref element="IC1" pad="2"/>
 <contactref element="PS1" pad="2"/>
 <contactref element="C16" pad="2"/>
@@ -1288,7 +1261,6 @@ Please make sure your boards conform to these design rules.
 <wire x1="9.8" y1="16.33" x2="11.03121875" y2="15.15618125" width="0" layer="19" extent="16-16"/>
 <wire x1="6.170878125" y1="19.65268125" x2="5.50338125" y2="18.02668125" width="0" layer="19" extent="1-16"/>
 <wire x1="9.86" y1="12.19" x2="11" y2="15" width="0" layer="19" extent="16-16"/>
-<wire x1="4.32" y1="22.25" x2="6.170878125" y2="19.65268125" width="0" layer="19" extent="16-16"/>
 <wire x1="7.278778125" y1="1.89358125" x2="12.39" y2="3.61" width="0" layer="19" extent="16-16"/>
 <wire x1="5.8147" y1="5.02721875" x2="7.278778125" y2="1.89358125" width="0" layer="19" extent="16-16"/>
 <wire x1="4.921521875" y1="9.7519375" x2="5.8147" y2="5.02721875" width="0" layer="19" extent="16-16"/>
@@ -1788,14 +1760,12 @@ Please make sure your boards conform to these design rules.
 </signal>
 <signal name="CAN2_H">
 <contactref element="U3" pad="7"/>
-<contactref element="U$2" pad="2"/>
 <wire x1="1.6952625" y1="27.27271875" x2="1.9162625" y2="27.05171875" width="0.254" layer="16"/>
 <wire x1="1.9162625" y1="27.05171875" x2="1.9162625" y2="26.79250625" width="0.254" layer="16"/>
 <wire x1="1.9162625" y1="26.79250625" x2="2.45025" y2="26.25851875" width="0.254" layer="16"/>
 <wire x1="2.45025" y1="26.25851875" x2="5.25018125" y2="26.25851875" width="0.254" layer="16"/>
 <wire x1="5.25018125" y1="26.25851875" x2="5.935" y2="25.5737" width="0.254" layer="16"/>
 <wire x1="5.935" y1="25.5737" x2="5.935" y2="24.67630625" width="0.254" layer="16"/>
-<wire x1="7.32" y1="23.29130625" x2="7.32" y2="22.25" width="0.254" layer="16"/>
 <wire x1="5.935" y1="24.67630625" x2="7.32" y2="23.29130625" width="0.254" layer="16"/>
 <contactref element="R5" pad="1"/>
 <wire x1="8.250259375" y1="23.498821875" x2="8.04274375" y2="23.29130625" width="0.1524" layer="16"/>
@@ -1803,7 +1773,6 @@ Please make sure your boards conform to these design rules.
 </signal>
 <signal name="CAN2_L">
 <contactref element="U3" pad="6"/>
-<contactref element="U$2" pad="3"/>
 <wire x1="2.3452625" y1="27.27271875" x2="2.5162625" y2="27.10171875" width="0.254" layer="16"/>
 <wire x1="2.5162625" y1="27.10171875" x2="2.5162625" y2="26.79250625" width="0.254" layer="16"/>
 <wire x1="2.5162625" y1="26.79250625" x2="2.666709375" y2="26.642059375" width="0.254" layer="16"/>
@@ -1812,7 +1781,6 @@ Please make sure your boards conform to these design rules.
 <wire x1="5.971540625" y1="26.642059375" x2="6.316" y2="26.2976" width="0.254" layer="16"/>
 <wire x1="6.942225" y1="24.2079" x2="8.829878125" y2="24.2079" width="0.254" layer="16"/>
 <wire x1="6.316" y1="26.2976" x2="6.316" y2="24.834125" width="0.254" layer="16"/>
-<wire x1="10.32" y1="22.25" x2="10.32" y2="22.717778125" width="0.254" layer="16"/>
 <wire x1="10.32" y1="22.717778125" x2="9.364978125" y2="23.6728" width="0.254" layer="16"/>
 <contactref element="R5" pad="2"/>
 <wire x1="9.364978125" y1="23.6728" x2="8.829878125" y2="24.2079" width="0.254" layer="16"/>
@@ -1821,27 +1789,22 @@ Please make sure your boards conform to these design rules.
 </signal>
 <signal name="CAN3_H">
 <contactref element="U4" pad="7"/>
-<contactref element="U$2" pad="5"/>
 <wire x1="11.79" y1="27.02" x2="11.569" y2="26.799" width="0.254" layer="16"/>
 <wire x1="11.569" y1="26.799" x2="11.569" y2="26.5397875" width="0.254" layer="16"/>
 <wire x1="11.569" y1="26.5397875" x2="11.308053125" y2="26.278840625" width="0.254" layer="16"/>
-<wire x1="8.348840625" y1="26.278840625" x2="7.32" y2="25.25" width="0.254" layer="16"/>
 <wire x1="11.308053125" y1="26.278840625" x2="9" y2="26.278840625" width="0.254" layer="16"/>
-<contactref element="R6" pad="1"/>
 <wire x1="9" y1="26.278840625" x2="8.348840625" y2="26.278840625" width="0.254" layer="16"/>
-<wire x1="8.9144" y1="26.23278125" x2="8.960459375" y2="26.278840625" width="0.1524" layer="16"/>
 <wire x1="8.960459375" y1="26.278840625" x2="9" y2="26.278840625" width="0.1524" layer="16"/>
+<contactref element="R6" pad="1"/>
+<wire x1="8.9144" y1="26.23278125" x2="8.960459375" y2="26.278840625" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="CAN3_L">
 <contactref element="U4" pad="6"/>
-<contactref element="U$2" pad="6"/>
 <wire x1="12.44" y1="27.02" x2="12.219" y2="26.799" width="0.254" layer="16"/>
 <wire x1="12.219" y1="26.799" x2="12.219" y2="26.5397875" width="0.254" layer="16"/>
 <wire x1="12.219" y1="26.5397875" x2="10.9292125" y2="25.25" width="0.254" layer="16"/>
-<wire x1="10.9292125" y1="25.25" x2="10.32" y2="25.25" width="0.254" layer="16"/>
 <contactref element="R6" pad="2"/>
-<wire x1="10.32" y1="25.25" x2="8.99718125" y2="25.25" width="0.1524" layer="16"/>
-<wire x1="8.99718125" y1="25.25" x2="8.9144" y2="25.33278125" width="0.1524" layer="16"/>
+<wire x1="8.9144" y1="25.33278125" x2="10.9292125" y2="25.25" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$2">
 <contactref element="C2" pad="1"/>
@@ -1859,10 +1822,8 @@ Please make sure your boards conform to these design rules.
 <wire x1="27.9985125" y1="16.13" x2="27.39" y2="16.13" width="0.254" layer="1"/>
 </signal>
 <signal name="N$15">
-<contactref element="U$2" pad="4"/>
 <contactref element="Q1" pad="3"/>
 <wire x1="1.917440625" y1="21.88231875" x2="1.917440625" y2="22.847440625" width="1.016" layer="16"/>
-<wire x1="1.917440625" y1="22.847440625" x2="4.32" y2="25.25" width="1.016" layer="16"/>
 </signal>
 <signal name="PWRON">
 <contactref element="U1" pad="33"/>

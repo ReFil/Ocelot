@@ -4852,6 +4852,8 @@ Super Speed pins not available on the 16-pin purely SMD connector so this part i
 <part name="GND12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND13" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
+<part name="GND14" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND15" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5020,6 +5022,12 @@ Super Speed pins not available on the 16-pin purely SMD connector so this part i
 <instance part="SUPPLY9" gate="G$1" x="142.24" y="58.42" smashed="yes">
 <attribute name="VALUE" x="142.24" y="61.214" size="1.778" layer="96" align="bottom-center"/>
 </instance>
+<instance part="GND14" gate="1" x="93.98" y="73.66" smashed="yes">
+<attribute name="VALUE" x="93.98" y="73.406" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND15" gate="1" x="96.52" y="73.66" smashed="yes">
+<attribute name="VALUE" x="96.52" y="73.406" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5141,6 +5149,14 @@ Super Speed pins not available on the 16-pin purely SMD connector so this part i
 <wire x1="142.24" y1="48.26" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <junction x="142.24" y="48.26"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$2" class="0">

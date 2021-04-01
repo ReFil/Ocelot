@@ -1167,10 +1167,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="17.00544375" y1="16.00290625" x2="17.00290625" y2="16.00290625" width="0.508" layer="16"/>
 <via x="17.00290625" y="16.00290625" extent="1-16" drill="0.3048"/>
 <wire x1="17.00290625" y1="16.00290625" x2="17" y2="16" width="0.508" layer="1"/>
-<via x="24.894540625" y="10.576559375" extent="1-16" drill="0.35"/>
-<via x="24" y="15" extent="1-16" drill="0.35"/>
-<via x="23.187659375" y="15.3035" extent="1-16" drill="0.35"/>
-<via x="25.847040625" y="10.614659375" extent="1-16" drill="0.35"/>
+<wire x1="25.7937" y1="14.855559375" x2="24.89" y2="11.63" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAN1_RX">
 <contactref element="U1" pad="61"/>

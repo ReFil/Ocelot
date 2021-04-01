@@ -9737,6 +9737,10 @@ CONN_05
 <part name="SWD" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="1.27MM" package3d_urn="urn:adsk.eagle:package:38110/1"/>
 <part name="GND10" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
 <part name="U5" library="comma.ai" deviceset="DRV8873HPWPRQ1" device="" value="Value"/>
+<part name="C15" library="comma.ai" deviceset="C" device="0603" value="47nF"/>
+<part name="C16" library="comma.ai" deviceset="C" device="0603" value="1uF"/>
+<part name="R1" library="comma.ai" deviceset="R" device="0402" value="10k"/>
+<part name="SUPPLY4" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device="" value="3V3"/>
 </parts>
 <sheets>
 <sheet>
@@ -9958,6 +9962,21 @@ CONN_05
 <attribute name="NAME" x="345.7956" y="98.0186" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="345.1606" y="95.4786" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="345.1606" y="95.4786" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+</instance>
+<instance part="C15" gate="G$1" x="312.42" y="109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="309.499" y="110.744" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="314.579" y="110.744" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C16" gate="G$1" x="317.5" y="116.84" smashed="yes" rot="R180">
+<attribute name="NAME" x="315.976" y="113.919" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="315.976" y="118.999" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R1" gate="G$1" x="301.244" y="95.758" smashed="yes" rot="R90">
+<attribute name="NAME" x="299.7454" y="91.948" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="304.546" y="91.948" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY4" gate="G$1" x="301.244" y="100.838" smashed="yes">
+<attribute name="VALUE" x="300.228" y="104.394" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -10444,6 +10463,71 @@ CONN_05
 <pinref part="U1" gate="G$1" pin="PA13/JTMS/SWDIO"/>
 <wire x1="71.12" y1="116.84" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="96.52" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="C15" gate="G$1" pin="2"/>
+<pinref part="U5" gate="A" pin="CPH"/>
+<wire x1="314.96" y1="109.22" x2="325.12" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U5" gate="A" pin="CPL"/>
+<wire x1="325.12" y1="106.68" x2="304.8" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="106.68" x2="304.8" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<wire x1="304.8" y1="109.22" x2="307.34" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U5" gate="A" pin="VCP"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="325.12" y1="111.76" x2="317.5" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U5" gate="A" pin="FAULT_N"/>
+<wire x1="325.12" y1="88.9" x2="301.244" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="301.244" y1="88.9" x2="301.244" y2="90.678" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
+</segment>
+</net>
+<net name="MISO" class="0">
+<segment>
+<pinref part="U5" gate="A" pin="SDO_MODE"/>
+<wire x1="325.12" y1="83.82" x2="309.88" y2="83.82" width="0.1524" layer="91"/>
+<label x="309.88" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOSI" class="0">
+<segment>
+<pinref part="U5" gate="A" pin="SDI_SR"/>
+<wire x1="325.12" y1="81.28" x2="309.88" y2="81.28" width="0.1524" layer="91"/>
+<label x="309.88" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCK" class="0">
+<segment>
+<pinref part="U5" gate="A" pin="SCLK_ITRIP_N"/>
+<wire x1="325.12" y1="78.74" x2="309.88" y2="78.74" width="0.1524" layer="91"/>
+<label x="309.88" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NCS1" class="0">
+<segment>
+<pinref part="U5" gate="A" pin="SCS_OL_N"/>
+<wire x1="325.12" y1="76.2" x2="309.88" y2="76.2" width="0.1524" layer="91"/>
+<label x="309.88" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
