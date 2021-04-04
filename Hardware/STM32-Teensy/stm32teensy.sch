@@ -4066,8 +4066,8 @@ Super Speed pins not available on the 16-pin purely SMD connector so this part i
 <part name="C2" library="comma.ai" deviceset="C" device="0402" value="100n"/>
 <part name="C3" library="comma.ai" deviceset="C" device="0402" value="100n"/>
 <part name="C4" library="comma.ai" deviceset="C" device="0402" value="100n"/>
-<part name="C5" library="comma.ai" deviceset="C" device="0402"/>
-<part name="C6" library="comma.ai" deviceset="C" device="0402"/>
+<part name="C5" library="comma.ai" deviceset="C" device="0402" value="22p"/>
+<part name="C6" library="comma.ai" deviceset="C" device="0402" value="22p"/>
 <part name="Y1" library="comma.ai" deviceset="CRYSTAL-3.2X2.5" device="4-PIN"/>
 <part name="GND2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>

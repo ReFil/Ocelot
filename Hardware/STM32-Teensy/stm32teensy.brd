@@ -1112,10 +1112,10 @@ Please make sure your boards conform to these design rules.
 <element name="C4" library="comma.ai" package="0402-C" value="100n" x="4.39" y="23.11" smashed="yes" rot="MR270">
 <attribute name="NAME" x="3.628" y="23.745" size="0.6096" layer="26" rot="MR270"/>
 </element>
-<element name="C5" library="comma.ai" package="0402-C" value="" x="6.31" y="5.43" smashed="yes" rot="R270">
+<element name="C5" library="comma.ai" package="0402-C" value="22p" x="6.31" y="5.43" smashed="yes" rot="R270">
 <attribute name="NAME" x="5.635" y="6.572" size="0.6096" layer="25"/>
 </element>
-<element name="C6" library="comma.ai" package="0402-C" value="" x="11.89" y="5.43" smashed="yes" rot="R90">
+<element name="C6" library="comma.ai" package="0402-C" value="22p" x="11.89" y="5.43" smashed="yes" rot="R90">
 <attribute name="NAME" x="13.028" y="4.995" size="0.6096" layer="25" rot="R90"/>
 </element>
 <element name="C7" library="comma.ai" package="0402-C" value="100n" x="13.61" y="23.19" smashed="yes" rot="MR180">
