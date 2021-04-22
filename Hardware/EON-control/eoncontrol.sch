@@ -6792,7 +6792,7 @@ part number 2062-2P from STA</description>
 </classes>
 <parts>
 <part name="X1" library="con-cypressindustries" library_urn="urn:adsk.eagle:library:138" deviceset="MINI-USB-SCHIELD-" device="32005-201" package3d_urn="urn:adsk.eagle:package:6443/1"/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="80u"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="40u"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
@@ -6804,7 +6804,7 @@ part number 2062-2P from STA</description>
 <part name="IC1" library="SamacSys_Parts" deviceset="AD8531ARTZ-REEL7" device=""/>
 <part name="J2" library="DX07VN24WA2C1568" deviceset="DX07VN24WA2C1568" device=""/>
 <part name="GND7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="80u"/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="40u"/>
 <part name="Q1" library="Transistor" library_urn="urn:adsk.eagle:library:16378713" deviceset="PMOSFET" device="SOT23" package3d_urn="urn:adsk.eagle:package:28738/2" technology="_" value="PMOSFET"/>
 <part name="R1" library="comma.ai" deviceset="R" device="0603" value="20k"/>
 <part name="R2" library="comma.ai" deviceset="R" device="0603" value="10k"/>
@@ -6815,7 +6815,7 @@ part number 2062-2P from STA</description>
 <part name="GND9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
-<part name="C4" library="comma.ai" deviceset="C" device="0603" value="80u"/>
+<part name="C4" library="comma.ai" deviceset="C" device="0603" value="10u"/>
 <part name="C5" library="comma.ai" deviceset="C" device="0603" value="1u"/>
 <part name="GND11" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
@@ -7023,6 +7023,9 @@ part number 2062-2P from STA</description>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="35.56" x2="160.02" y2="35.56" width="0.1524" layer="91"/>
+<junction x="160.02" y="35.56"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
