@@ -1,0 +1,19 @@
+Partlist exported from C:/Users/harry/Documents/Car Project/Ocelot/Hardware/Motor-Driver-Breakout/Motor-Driver-Breakout.sch at 28/04/2021 18:38
+
+Part Value Device         Package    Description                                                                                                     MANUFACTURER      PARTNUMBER     POPULARITY REFDES TYPE VALUE
+C1   1u    C0603          0603-C                                                                                                                                                                                  
+C2   47n   C0603          0603-C                                                                                                                                                                                  
+C3   0.1u  C0603          0603-C                                                                                                                                                                                  
+C4   0.1u  C0603          0603-C                                                                                                                                                                                  
+C5   1u    C0603          0603-C                                                                                                                                                                                  
+J1         CONN_09        1X09       Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections                                                              
+J2         CONN_02        1X02       Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections                                                              
+J3         CONN_02        1X02       Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections                                                              
+J4         CONN_02        1X02       Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections                                                              
+R1   200k  R0603          0603-R                                                                                                                                                                                  
+R2   10k   R0603          0603-R                                                                                                                                                                                  
+R3   200k  R0603          0603-R                                                                                                                                                                                  
+R4   200k  R0603          0603-R                                                                                                                                                                                  
+SJ1        SJ2W           SJ_2       SMD solder JUMPER                                                                                                                                7                           
+SJ2        SJ             SJ         SMD solder JUMPER                                                                                                                                33                          
+U1   Value DRV8873HPWPRQ1 PWP0024J_N                                                                                                                 Texas Instruments DRV8873SPWPRQ1            RefDes TYPE Value
