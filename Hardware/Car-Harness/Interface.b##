@@ -198,7 +198,7 @@ PEDAL</text>
 CONTROLS</text>
 <text x="80" y="27" size="2.1844" layer="25" rot="R90">CAN3
 RADARS</text>
-<text x="22.7" y="76.7" size="2.1844" layer="25" rot="SR270">CONSTANT 12V</text>
+<text x="22.7" y="71.7" size="2.1844" layer="25" rot="SR270">CONSTANT 12V</text>
 <wire x1="61" y1="0" x2="61" y2="21" width="0.1524" layer="25"/>
 <wire x1="26" y1="53" x2="0" y2="53" width="0.1524" layer="25"/>
 <wire x1="64" y1="0" x2="64" y2="26" width="0.1524" layer="25"/>
@@ -3931,10 +3931,9 @@ Please make sure your boards conform to these design rules.
 <contactref element="R4" pad="1"/>
 <wire x1="88.64" y1="12.7" x2="88.1" y2="13.24" width="0.3048" layer="16"/>
 <wire x1="88.1" y1="13.24" x2="88.1" y2="15.28" width="0.3048" layer="16"/>
-<wire x1="72.86" y1="15.28" x2="72.86" y2="23.04" width="1.016" layer="1"/>
-<wire x1="72.86" y1="23.04" x2="81.750665625" y2="23.04" width="1.016" layer="1"/>
-<wire x1="81.750665625" y1="23.04" x2="88.1" y2="16.690665625" width="1.016" layer="1"/>
-<wire x1="88.1" y1="16.690665625" x2="88.1" y2="15.28" width="1.016" layer="1"/>
+<wire x1="84.86" y1="12.04" x2="76.1" y2="12.04" width="1.016" layer="1"/>
+<wire x1="72.86" y1="15.28" x2="76.1" y2="12.04" width="1.016" layer="1"/>
+<wire x1="88.1" y1="15.28" x2="84.86" y2="12.04" width="1.016" layer="1"/>
 <wire x1="53.365" y1="23.35" x2="72.86" y2="15.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CAN3_H">
